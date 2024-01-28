@@ -3,21 +3,9 @@ t = int(input())
 def ft_get_a_b(n):
 	return (n // 3, n - (n // 3))
 
-#def rev(n, m):
-#	if (n == m):
-#		return (1)
-#	elif (n < m):
-#		return (0)
-#	elif (n % 3 != 0):
-#		return (0)
-#	elif (n % 3 == 0):
-#		a, b = ft_get_a_b(n)
-#		return rev(a, m) + rev(b, m)
-
-
 for _ in range(t):
 	n, m = map(int, input().split())
-	if n == 1 and m == 1:
+	if n == 1:
 		print("YES")
 	elif (n % 3 != 0) or m > n:
 		print("NO")
